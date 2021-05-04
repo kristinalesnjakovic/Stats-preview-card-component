@@ -1,0 +1,136 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+}
+
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 12px;
+  padding-top: 10px;
+  margin-right: 25px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding-top: 100px;
+  color: hsl(0, 0%, 100%)
+}
+
+a {
+  color: hsl(245, 17%, 55%);
+}
+
+a:hover {
+  color: hsl(245, 15%, 71%);
+}
+
+.main {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.text-content {
+  display: inline-block;
+  width: 335px;
+  height: 330px;
+  padding: 65px 20px 50px 70px;
+}
+
+.card {
+  text-align: left;
+  float: left;
+  padding: 50px 45px 10px 0;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.6);
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.image-content {
+  float: right;
+  background-repeat: no-repeat;
+  background-image: url(images/image-header-desktop.jpg), url(images/background-img.PNG);
+  background-size: contain;
+  background-blend-mode: multiply;
+  height: 445px;
+  width: 540px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+@media (max-width: 1395px) {
+
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+  }
+
+  .text-content {
+    width: auto;
+    height: auto;
+    padding: 30px;
+  }
+
+  .image-content {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+  }
+
+  .card {
+    display: contents;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .image-content {
+    height: 295px;
+    width: 293px;
+  }
+
+  .text-content {
+    padding-top: 0;
+  }
+}
