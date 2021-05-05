@@ -15,10 +15,14 @@ h3 {
 
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  font-size: 12px;
+  font-size: 0.8em;
   padding-top: 10px;
   margin-right: 25px;
   line-height: 1.5;
+}
+
+img {
+  max-height: 425px;
 }
 
 footer {
@@ -42,19 +46,20 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  position: relative;
 }
 
 .text-content {
   display: inline-block;
-  width: 335px;
-  height: 330px;
-  padding: 65px 20px 50px 70px;
+  width: 35%;
+  height: auto;
+  padding: 50px 20px 50px 50px;
 }
 
 .card {
   text-align: left;
   float: left;
-  padding: 50px 45px 10px 0;
+  padding: 30px 40px 10px 0;
 }
 
 .card p {
@@ -66,20 +71,28 @@ a:hover {
 }
 
 .image-content {
+  display: flex;
+  max-height: 425px;
+  width: auto;
   float: right;
-  background-repeat: no-repeat;
-  background-image: url(images/image-header-desktop.jpg), url(images/background-img.PNG);
-  background-size: contain;
-  background-blend-mode: multiply;
-  height: 445px;
-  width: 540px;
+  background-color: hsl(277, 64%, 61%, 0.9);
   border-top-left-radius: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
+.image-content img {
+  mix-blend-mode: multiply;
+}
 
-@media (max-width: 1395px) {
+
+@media (max-width: 1365px) {
+  .main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1195px) {
 
   body {
     margin-left: 20px;
@@ -87,11 +100,18 @@ a:hover {
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 1.5em;
   }
 
   p {
     margin: 0;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    display:inline-flex;
+
   }
 
   .main {
@@ -122,15 +142,4 @@ a:hover {
     text-align: center;
   }
 
-}
-
-@media (max-width: 620px) {
-  .image-content {
-    height: 295px;
-    width: 293px;
-  }
-
-  .text-content {
-    padding-top: 0;
-  }
 }
