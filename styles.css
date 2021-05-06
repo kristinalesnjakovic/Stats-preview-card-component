@@ -46,7 +46,6 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  position: relative;
 }
 
 .text-content {
@@ -64,7 +63,6 @@ a:hover {
 
 .card p {
   color: hsla(0, 0%, 100%, 0.6);
-  display: inline-block;
   margin-top: 0;
   margin-right: 0;
   font-family: 'Lexend Deca', sans-serif;
